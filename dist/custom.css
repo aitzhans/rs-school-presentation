@@ -1,0 +1,70 @@
+.reveal .custom__cover {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .custom__cover-header {
+  font-size: 3em;
+  padding-left: 0.3em;
+}
+
+.reveal .custom__cover-subheader {
+  margin-top: -1em;
+  font-size: 0.18em;
+  color: #42affa;
+}
+
+.reveal .custom__quote {
+  background: none;
+  font-size: 1em;
+  text-align: left;
+}
+
+.reveal .custom__accent {
+  color: #42affa;
+}
+
+.custom__logos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .custom__logo {
+  width: 20%;
+  height: auto;
+  margin-right: 0.8em;
+}
+
+.reveal .custom__author {
+  font-size: 0.6em;
+  margin-left: 5em;
+}
+
+/* .reveal .custom__img {
+  width: 800px;
+  height: 600px;
+} */
+
+.reveal .custom__header {
+  margin: 0;
+  margin-top: 0.5em;
+  padding: 0;
+  
+}
+
+.reveal .custom__note {
+  margin-top: -0.4em;
+  font-size: 0.8em;
+}
+
+.reveal .custom__ul {
+  margin-top: 0.3em;
+}
+
+.reveal .custom__li {
+  font-size: 0.7em;
+}

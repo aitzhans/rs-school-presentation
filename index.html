@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Svelte</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/custom.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="white">
+					<img  src="assets/cover.png">
+				</section>
+				<section>
+					<div class="custom__cover">
+						<img  src="assets/Svelte_Logo.svg" width="170" height="205">
+						<h1 class="custom__cover-header">
+							SVELTE
+							<p class="custom__cover-subheader">
+								Cybernetically enhanced web apps
+							</p> 
+						</h1>
+					</div>
+				</section>
+				<section>
+					<blockquote  class="custom__quote" cite='https://fireship.io/lessons/svelte-v3-overview-firebase/'>
+						"I can confidently say that Svelte has been the easiest <span class='custom__accent'>JavaScript component 
+						library</span> to learn and start putting to use in a productive way."
+					</blockquote>
+					<figcaption  class="custom__author" >
+						— <strong>Jeff Delaney,</strong> from 
+						<a href='https://fireship.io/lessons/svelte-v3-overview-firebase/'>
+							Svelte Realtime Todo List with Firebase
+						</a>
+					</figcaption>
+					<aside class="notes">
+						<p>Jeff Delaney, a GoogleDevExpert</p>
+					</aside>
+				</section>
+				<section>
+					<h5 class="custom__header">JavaScript component library</h5>
+					<div class="custom__logos">
+						<img class=" custom__logo" src="assets/logo_svelte.png" width="250" height="250">
+						<img class="fragment  custom__logo" src="assets/logo_angular.png" width="250" height="250">
+						<img class="fragment  custom__logo" src="assets/logo_react.png" width="250" height="250">
+						<img class="fragment  custom__logo" src="assets/logo_vue.png" width="250" height="250">						
+					</div>
+					<br>
+					<h3 class="custom__header custom__accent  fragment fade-up  ">What makes Svelte different?</h3>
+
+				</section>
+				<section>
+					<h4 class="custom__header">Traditional development process </h4>
+					<span class="custom__note">Framework/library</span>
+					<div class="r-stack">
+						<img class="fragment fade-out"  data-fragment-index="0" src="assets/process01.svg" width="800" height="300">
+						<img  class="fragment"  data-fragment-index="0"  src="assets/process02.svg" width="800" height="300">
+					</div>
+					<p class="fragment fade-up  custom__note">Angular, React, Vue</p>
+
+					<aside class="notes">
+						<p>Write code => build it => final output = app-specific code + runtime</p>
+						<p>We can reduce app-specific code, but not runtime</p>
+						<p>React and Vue are using virtual dom</p>
+						<p>When virtual DOM => copy of current state in memory => incoming change? 
+							=> compare and reconcile virtual and real trees => update actual dom</p>
+					</aside>
+				</section>
+				<section>
+					<h4  class="custom__header">Compiler development process </h4>
+					<span class="custom__note">Svelte</span>
+					<div class="r-stack">
+						<img src="assets/process03.svg" width="800" height="300">
+						<img  class="fragment"  src="assets/process04.svg" width="800" height="300">
+					</div>
+					<ul class="custom__ul">
+						<li class="fragment custom__li">No virtual DOM (smaller output)</li>
+						<li class="fragment custom__li">Optimizations at compile stage</li>
+					</ul>
+					<aside class="notes">
+						<p>Svelte makes most of its optimizations at compile time</p>
+						<p>App-specific code can be various in size but runtime is always tiny</p>
+						<p>Because Svelte doesn't use virtual dom</p>
+					</aside>
+				</section>
+				<section>
+					<img src="assets/realWorldComparison.png" width="800" height="493">
+					<p class="custom__note">
+					<a href="https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1">
+						A RealWorld Comparison of Front-End Frameworks 2020
+					</a>						
+					</p>
+					
+				</section>
+				<section>
+					<h4>What metrics do we look at?</h4>
+					<ul >
+						<li class="fragment" >Performance</li>
+						<li class="fragment" >Size</li>
+						<li class="fragment" >Lines of Code</li>
+					</ul>
+					<aside class="notes">
+						<p>Performance — how long does this App take to show content and become usable?</p>
+						<p>Size —how big is the App? </p>
+						<p>Lines of Code — how many lines of code did the author need to create working application?</p>
+					</aside>
+				</section>
+				<section>
+					<h3 >Performance</h3>
+					<div class="r-stack">
+						<img src="assets/performance01.png" width="800" height="430">
+						<img class="fragment" src="assets/performance02.png" width="800" height="430">
+					</div>
+					<aside class="notes">
+						<p>Performance — higher is better</p>
+					</aside>
+				</section>
+				<section>
+					<h3 >Size</h3>
+					<div class="r-stack">
+						<img src="assets/size01.png" width="800" height="430">
+						<img class="fragment" src="assets/size02.png" width="800" height="430">
+					</div>
+					<aside class="notes">
+						<p>Size - fewer is better</p>
+					</aside>
+				</section>
+				<section>
+					<h3 >Lines of Code</h3>
+					<div class="r-stack">
+						<img src="assets/lines01.png" width="800" height="430">
+						<img class="fragment" src="assets/lines02.png" width="800" height="430">
+					</div>
+					<aside class="notes">
+						<p>Lines of code - fewer is better</p>
+					</aside>
+				</section>
+				<section>
+					<h3 >If Svelte is so good,<br> <span class='custom__accent'>why isn't </span>everyone using it?</h3>
+					<aside class="notes">
+						<p>Svelte is young and open-source => small community, no full-time support, still evolving best practices</p>
+					</aside>
+				</section>
+				<section>
+					<h3 >NPM packages found:</h3>
+					<div class="r-stack">
+						<img class="fragment fade-up" src="assets/npm01.png" width="800" height="430">
+						<img class="fragment fade-up" src="assets/npm02.png" width="800" height="430">
+						<img class="fragment fade-up" src="assets/npm03.png" width="800" height="430">
+						<img class="fragment fade-up" src="assets/npm04.png" width="800" height="430">
+					</div>
+					<aside class="notes">
+						<p>Imagine... You start a project...</p>
+					</aside>
+				</section>
+				<section>
+					<h3 ><span class="custom__accent">Fair Reasons</span> Not to Adopt Svelte</h3>
+					<ul >
+						<li class="fragment" >Young library ecosystem</li>
+						<li class="fragment" >Development speed</li>
+						<li class="fragment" >Lack of available jobs</li>
+					</ul>
+				</section>
+				<section>
+					<h3 >So, <span class="custom__accent">should you give</span> Svelte a try?</h3><br>
+					<h1 class="fragment">FOR ME: YES!</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+				keyboard: true,
+				showNotes: true,
+				plugins: [ RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
